@@ -1,0 +1,107 @@
+/* --------Title section --------*/
+#title {
+  /* background-color: rgb(41, 41, 41); */
+  /* background-color: rgb(29, 29, 29); */
+  background-color: #000;
+}
+/* keep an eye on the title container because it's creating an unwanted sidescroll */
+.netmix-title-container{
+    padding: 100px;
+}
+
+.netmix-title {
+  padding: 50px 0 50px;
+  color: white;
+}
+
+/* ------Navigation Bar--------- */
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-netmix {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.nav-item {
+  padding: 0 15px;
+}
+/* ---------Menu section ---------*/
+
+#menu {
+  background-color: #000;
+  padding-top: 50px;
+}
+
+/* ------Html tags---------- */
+h1 {
+  font-family: "Oswald", sans-serif;
+}
+/* revisit this section to see if the flex will cause issues */
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  background-color: #000
+}
+
+span{
+  margin:20px;
+}
+
+main .list {
+	width: 100%;
+	max-width: 768px;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	margin-top: 25px;
+}
+
+main .list .item {
+	padding: 15px;
+	border-bottom: 1px solid #CCC;
+}
+main .list .item:last-of-type {
+	border-bottom: none;
+}
+main .list .item:hover {
+	background: rgba(0, 0, 0, 0.05);
+}
+
+.pagenumbers {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.pagenumbers button {
+	width: 50px;
+	height: 50px;
+
+	appearance: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+	background-color: #44AAEE;
+
+	margin: 5px;
+	transition: 0.4s;
+
+	color: #FFF;
+	font-size: 18px;
+	text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pagenumbers button:hover {
+	background-color: #44EEAA;
+}
+
+.pagenumbers button.active {
+	background-color: #44EEAA;
+	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
